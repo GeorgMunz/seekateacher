@@ -1,0 +1,50 @@
+@each $prefix, $val in ('', 1),
+                       ('-0', 0),
+                       (-10, 0.66),
+                       (-30, 2),
+                       (-45, 3),
+                       (-60, 4) {
+  .p-a#{$prefix} { padding:        round($spacer * $val) !important; }
+  .p-t#{$prefix} { padding-top:    round($spacer * $val) !important; }
+  .p-r#{$prefix} { padding-right:  round($spacer * $val) !important; }
+  .p-b#{$prefix} { padding-bottom: round($spacer * $val) !important; }
+  .p-l#{$prefix} { padding-left:   round($spacer * $val) !important; }
+  .p-x#{$prefix} { padding-right:  round($spacer * $val) !important; padding-left:   round($spacer * $val) !important; }
+  .p-y#{$prefix} { padding-top:    round($spacer * $val) !important; padding-bottom: round($spacer * $val) !important; }
+}
+
+@mixin p($prefix: '', $tval: '') {
+  @if $tval == '' {
+    $val: $spacer;
+  }
+  @else {
+    $val: $tval;
+  }
+
+  @if $prefix == '' {
+    padding: $val;
+  }
+  @else if $prefix == t {
+    padding-top: $val;
+  }
+  @else if $prefix == r {
+    padding-right: $val;
+  }
+  @else if $prefix == b {
+    padding-bottom: $val;
+  }
+  @else if $prefix == l {
+    padding-left: $val;
+  }
+  @else if $prefix == b {
+    padding-bottom: $val;
+  }
+  @else if $prefix == x {
+    padding-left: $val;
+    padding-right: $val;
+  }
+  @else if $prefix == y {
+    padding-top: $val;
+    padding-bottom: $val;
+  }
+}

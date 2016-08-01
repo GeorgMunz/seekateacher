@@ -1,0 +1,1 @@
+<?= form_dropdown('t', [''=>'', '1'=>'Not Available', '2'=>'Maybe Available', '3'=>'Available'], fsp('data', 'avail'), 'style="width:100%;" data-plugin="select2" placeholder="Availablility Status" data-fsp-key="avail" ' . (isset($on_change) ? 'data-fsp-on="change"':'') ) ?>

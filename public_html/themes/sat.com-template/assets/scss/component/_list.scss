@@ -1,0 +1,32 @@
+.list-reset {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.list-style-1 {
+  @extend .list-reset;
+  > li {
+    padding: 10px 0;
+  }
+}
+
+.list-style-2 {
+  @extend .list-reset;
+  background-color: #fff;
+  > li {
+    display: flex;
+    padding: 10px 15px;
+    border-bottom: 1px solid $gray;
+    a {
+      width: 100%;
+      height: 100%;
+      color: $blue;
+    }
+  }
+  > li.active {
+    a {
+      color: $black;
+    }
+  }
+}

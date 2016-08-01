@@ -1,0 +1,57 @@
+.panel {
+  border: 0;
+  box-shadow: none;
+}
+
+.panel-pink {
+  .panel-heading {
+    background-color: $pink;
+    padding: 5px 15px;
+    .panel-title {
+      color: $white;
+      font-size: 22px;
+    }
+  }
+}
+
+.panel-pink-inverse {
+  width: 260px;
+  margin-right: 15px;
+  > h2 {
+    color: $pink;
+    margin-bottom: 5px;
+  }
+  > .panel-body {
+    padding: 15px;
+    background-color: $gray-light;
+    min-height: 200px;
+  }
+}
+
+.panel-pink-2 {
+  margin-bottom: 15px;
+  .panel-heading {
+    background-color: $white;
+    color: $pink;
+    position: relative;
+    cursor: pointer;
+    .glyphicon {
+      @include square(39);
+      display: inline-block;
+      background-color: $pink;
+      color: $white;
+      @extend .flex-center;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+  .panel-title {
+    color: $pink;
+    font-size: 18px;
+    @include font('bold');
+  }
+  .panel-body {
+    padding-right: 0;
+  }
+}

@@ -1,0 +1,50 @@
+@each $prefix, $val in ('', 1),
+                       ('-0', 0),
+                       (-10, 0.66),
+                       (-30, 2),
+                       (-45, 3),
+                       (-60, 4) {
+  .m-a#{$prefix} { margin:        round($spacer * $val) !important; }
+  .m-t#{$prefix} { margin-top:    round($spacer * $val) !important; }
+  .m-r#{$prefix} { margin-right:  round($spacer * $val) !important; }
+  .m-b#{$prefix} { margin-bottom: round($spacer * $val) !important; }
+  .m-l#{$prefix} { margin-left:   round($spacer * $val) !important; }
+  .m-x#{$prefix} { margin-right:  round($spacer * $val) !important; margin-left:   round($spacer * $val) !important; }
+  .m-y#{$prefix} { margin-top:    round($spacer * $val) !important; margin-bottom: round($spacer * $val) !important; }
+}
+
+@mixin m($prefix: '', $tval: '') {
+  @if $tval == '' {
+    $val: $spacer;
+  }
+  @else {
+    $val: $tval;
+  }
+
+  @if $prefix == '' {
+    margin: $val;
+  }
+  @else if $prefix == t {
+    margin-top: $val;
+  }
+  @else if $prefix == r {
+    margin-right: $val;
+  }
+  @else if $prefix == b {
+    margin-bottom: $val;
+  }
+  @else if $prefix == l {
+    margin-left: $val;
+  }
+  @else if $prefix == b {
+    margin-bottom: $val;
+  }
+  @else if $prefix == x {
+    margin-left: $val;
+    margin-right: $val;
+  }
+  @else if $prefix == y {
+    margin-top: $val;
+    margin-bottom: $val;
+  }
+}

@@ -1,0 +1,1 @@
+<?= form_dropdown('t', model('option')->dropdown('job_types', 'json', 'type'), fsp('data', 'type'), 'style="width:100%" data-plugin="select2" placeholder="Job Type" data-fsp-key="type" ' . (isset($on_change) ? 'data-fsp-on="change"' : '')) ?>

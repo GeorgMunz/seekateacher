@@ -1,0 +1,13 @@
+.pos-r { position: relative !important; }
+.pos-a { position: absolute !important; }
+.pos-f { position: fixed !important; }
+
+.pos-tl {
+  top: 0;
+  left: 0;
+}
+
+.pos-a-tl {
+  @extend .pos-a;
+  @extend .pos-tl;
+}

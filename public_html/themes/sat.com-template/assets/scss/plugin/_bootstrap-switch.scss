@@ -1,0 +1,11 @@
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary, .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-primary {
+  color: $white;
+  background: $pink;
+}
+.bootstrap-switch {
+  box-shadow: none !important;
+  border-color: $pink !important;
+}
+.bootstrap-switch .bootstrap-switch-handle-on, .bootstrap-switch .bootstrap-switch-handle-off, .bootstrap-switch .bootstrap-switch-label {
+    padding: 5px;
+}

@@ -1,0 +1,140 @@
+.btn {
+  border: 0;
+  line-height: 1;
+  font-size: 20px;
+  padding: 4px 28px;
+  border: 2px solid $gray;
+  @include font('lg-regular');
+  transition: color 0.2s, background 0.2s;
+  outline: 0 !important;
+}
+
+.btn-outline {
+  background-color: transparent;
+}
+
+.btn-outline-blue {
+  @extend .btn;
+  @extend .btn-outline;
+  border: 2px solid $blue;
+  color: $blue;
+  @extend .btn-outline;
+}
+.btn-outline-blue:hover {
+  background: $blue;
+  color: #fff;
+}
+
+.btn-outline-orange {
+  border: 2px solid $orange;
+  color: $orange;
+  @extend .btn-outline;
+}
+.btn-outline-orange:hover {
+  background: $orange;
+  color: #fff;
+}
+
+.btn-outline-pink {
+  border: 2px solid $pink;
+  color: $pink;
+  @extend .btn-outline;
+}
+.btn-outline-pink:hover {
+  background: $pink;
+  color: $white !important;
+}
+
+.btn-pink {
+  @extend .btn;
+  color: $white !important;
+  background-color: $pink !important;
+  border-color: $pink !important;
+}
+.btn-pink:hover,.btn-pink:focus {
+  color: $pink !important;
+  background: $white !important;
+}
+
+.btn-blue {
+  color: $white;
+  background-color: $blue;
+  border-color: $blue;
+}
+.btn-blue:hover {
+  color: $blue;
+  background: $white;
+}
+
+.btn-orange {
+  color: $white;
+  background-color: $orange;
+  border-color: $orange;
+}
+.btn-orange:hover {
+  color: $orange;
+  background: $white;
+}
+
+
+.btn-white {
+  color: $black;
+  background-color: $white;
+  border-color: $white;
+}
+
+.btn-detail {
+  @extend .btn;
+  @extend .btn-blue;
+  @extend .r-a-0;
+  display: block;
+  text-align: center;
+}
+
+.btn-md {
+  padding: 8px 30px;
+}
+
+.btn-icon {
+  padding-right: 45px;
+  position: relative;
+  [class^="icon-"],
+  [class*=" icon-"] {
+    position: absolute;
+    font-size: 30px;
+    top: 3px;
+    right: 5px;
+    margin: auto;
+  }
+}
+.btn-icon-left {
+  @extend .btn-icon;
+  padding-left: 45px;
+  padding-right: 30px;
+  [class^="icon-"],
+  [class*=" icon-"] {
+    right: auto;
+    left: 5px;
+    font-size: 25px;
+  }
+}
+
+.btn-icon-center {
+  padding: 0;
+  [class^="icon-"],
+  [class*=" icon-"] {
+    width: 30px;
+    height: 30px;
+    top: 0; bottom: 0;
+    right: 0; left: 0;
+    margin: auto;
+  }
+  height: 35px;
+  width: 35px;
+  top: 6px;
+}
+
+.btn-sm {
+  padding: 4px 10px;
+  font-size: 14px;
+}

@@ -1,0 +1,44 @@
+.flex {
+  display: flex !important;
+}
+
+.flex-full {
+  @extend .flex;
+  width: 100%; // fix: parent is flex
+}
+
+.flex-row {
+  @extend .flex;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-end {
+  @extend .flex;
+  justify-content: flex-end;
+}
+
+.flex-sb-h {
+  @extend .flex;
+  justify-content: space-between;
+}
+
+.flex-sb-v {
+  @extend .flex-wrap;
+  align-content: space-between;
+  > div {
+    width: 100%;
+  }
+}
+
+.flex-center {
+  @extend .flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}

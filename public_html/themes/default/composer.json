@@ -1,0 +1,17 @@
+{
+  "name": "xl/starter-template",
+  "description": "Starter Template",
+  "version": "0.0.2",
+  "require": {
+    "php": ">=5.3.0"
+  },
+  "authors": [
+    {
+      "name": "Shavi Pathania",
+      "email": "shavi@xorlabs.in"
+    }
+  ],
+  "require": {
+    "xl/template": "0.0.3"
+  }
+}

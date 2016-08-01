@@ -1,0 +1,1 @@
+<?= form_dropdown('t', model('city')->dropdown('post_code', 'post_code', true), fsp('data', 'post_code'), 'style="width:100%;" data-plugin="select2" placeholder="Post Code" data-fsp-key="post_code" ' . (isset($on_change) ? 'data-fsp-on="change"' : '')) ?>

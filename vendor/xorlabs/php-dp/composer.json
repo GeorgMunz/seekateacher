@@ -1,0 +1,16 @@
+{
+  "name": "xorlabs/php-dp",
+  "description": "Design Patterns implemented in and for PHP",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Shavi Pathania",
+      "email": "pathania.shavi@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "XORLabs\\PHP\\DP\\": "src/"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "ed88d15c52ba3b3df502187dfe350121",
+    "content-hash": "98f1e5921ee572a5e5d48ce203705754",
+    "packages": [
+        {
+            "name": "xorlabs/dp-php",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:xorlabs/dp-php.git",
+                "reference": "56cf70fdc307904637c1ea73a556aefb78b0b987"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "XORLabs\\DP\\PHP\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Shavi Pathania",
+                    "email": "pathania.shavi@gmail.com"
+                }
+            ],
+            "description": "Design Patterns implemented in and for PHP",
+            "time": "2016-05-12 07:00:40"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "xorlabs/dp-php": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

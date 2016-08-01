@@ -1,0 +1,38 @@
+.pagination {
+  > li {
+    a {
+      // width: 30px;
+      height:35px;
+      padding: 0px 10px;
+      margin-right: 15px;
+      font-size: 24px;
+      @include font('lg-regular');
+      background-color: $pink;
+      color: $white;
+      border: 0;
+    }
+  }
+  a:hover {
+    color: $white !important;
+    background-color: $pink !important;
+  }
+  .active a {
+    color: $white;
+    background-color: $blue;
+  }
+}
+.pagination {
+  > li {
+    .next {
+      width: 50px;
+      margin-right: 0;
+    }
+  }
+}
+.pagination > li >a:nth-of-type(5) {
+  margin-right: 0;
+}
+
+.pagination > li > a:hover {
+  color: $white;
+}

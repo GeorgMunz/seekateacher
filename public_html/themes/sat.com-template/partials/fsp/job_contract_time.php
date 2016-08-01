@@ -1,0 +1,1 @@
+<?= form_dropdown('subject', model('option')->dropdown('job_contract_time'), fsp('data', 'contract_time'), 'style="width:100%" data-plugin="select2" placeholder="Contract Time" data-fsp-key="contract_time" ' . (isset($on_change)?'data-fsp-on="change"':'')) ?>

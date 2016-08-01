@@ -1,0 +1,198 @@
+label {
+  font-weight: normal;
+}
+.label-pink {
+  color: $pink;
+  @include font('lg-regular');
+  font-size: 22px;
+  span {
+    @include font('regular');
+    font-size: 12px;
+    color: $gray-dark;
+  }
+}
+
+.form-control {
+  padding: 18px 15px;
+  border: 2px solid $pink;
+  box-shadow: none;
+}
+.form-control:focus {
+  border-color: $pink;
+  box-shadow: none;
+}
+
+select.form-control {
+  padding: initial;
+}
+
+.form-control-pink {
+  border: 2px solid $pink;
+}
+.form-control-pink:focus {
+  border-color: $pink;
+}
+
+.form-strip {
+  @extend .form-horizontal;
+  label {
+    background-color: $white;
+    color: $pink;
+    padding: 10px !important;
+    text-align: left !important;
+  }
+  .form-control {
+    border-color: $white;
+    background-color: $white;
+    border-radius: 0;
+  }
+}
+
+
+
+.rc-custom {
+	position: relative;
+  width: 150px;
+  height: 45px;
+  border: 2px solid $pink;
+  color: $pink;
+  border-radius: 5px;
+  font-weight: normal;
+  transition: all 0.2s;
+	> input {
+		display: none;
+	}
+	> span {
+		content: " ";
+		display: flex;
+    justify-content: center;
+    align-items: center;
+		position: absolute;
+		left: 0;
+		top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    @include font('lg-regular');
+    font-size: 20px;
+    cursor: pointer;
+	}
+	input:checked + span {
+    background-color: $pink;
+    color: $white;
+	}
+}
+.rc-custom:hover {
+  color: $white;
+  background-color: $pink;
+}
+.rc-custom-lg {
+  @extend .rc-custom;
+  width: 230px;
+  > span {
+    font-size: 24px;
+  }
+}
+
+.rc-custom-2 {
+	position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: $gray;
+	> input {
+		display: none;
+	}
+	> span {
+		content: " ";
+		position: absolute;
+		left: 0;
+		top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+	}
+	input:checked[value="0"] + span {
+    background-color: $red;
+	}
+  input:checked[value="1"] + span {
+    background-color: $yellow;
+  }
+  input:checked[value="2"] + span {
+    background-color: $green;
+	}
+}
+
+.rc-custom-3 {
+  @extend .rc-custom-2;
+  width: 15px;
+  height: 15px;
+  input:checked + span {
+    background-color: $pink !important;
+	}
+  &::after{
+    content: attr(data-label);
+    display: inline-block;
+    width: 400px;
+    margin-left: 22px;
+    cursor: pointer;
+  }
+}
+
+.rc-custom-4 {
+  @extend .rc-custom;
+  width: 170px;
+  height: 45px;
+  margin-right: 15px;
+  border: 0;
+  border-radius: 0;
+	> input {
+		display: none;
+	}
+	> span {
+    @include font('regular');
+    color: $white;
+    background-color: $gray;
+    font-size: 14px;
+    cursor: pointer;
+    border: 2px solid $gray;
+	}
+	input:checked + span {
+    background-color: $white;
+    color: $blue;
+    border-color: $blue;
+	}
+}
+.rc-custom-5 {
+  @extend .rc-custom-4;
+  width: 50px;
+  height: 25px;
+  > span {
+    @include font('regular');
+    color: $white;
+    background-color: transparent;
+    border: 1px solid $blue;
+    color: $black;
+	}
+	input:checked + span {
+    background-color: $blue;
+    color: $black;
+    border-color: $blue;
+	}
+}
+
+.rc-custom-5 {
+  @extend .rc-custom;
+  margin: 5px;
+  @include square(65);
+  > span {
+    background-size: cover;
+    padding: 2px;
+    border-color: transparent;
+    background-repeat: no-repeat;
+  }
+  input:checked + span {
+    border: 1px solid $pink;
+  }
+}

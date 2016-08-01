@@ -1,0 +1,29 @@
+{
+    "name": "xorlabs/xc-helpers",
+    "description": "xc helpers",
+    "type": "library",
+    "authors": [{
+        "name": "Shavi Pathania",
+        "email": "pathania.shavi@gmail.com"
+    }],
+    "repositories": [{
+        "type": "package",
+        "package": {
+            "name": "chriskacerguis/codeigniter-restserver",
+            "version": "dev-master",
+            "source": {
+                "url": "https://github.com/chriskacerguis/codeigniter-restserver.git",
+                "type": "git",
+                "reference": "origin/master"
+            }
+        }
+    }],
+    "require": {
+        "chriskacerguis/codeigniter-restserver": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "XORLabs\\XC\\Helpers\\": "src/"
+        }
+    }
+}

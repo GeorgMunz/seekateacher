@@ -1,0 +1,1 @@
+<?= form_dropdown('t', model('option')->job_subtypes(), fsp('data', 'subtype'), 'style="width:100%" data-plugin="select2" placeholder="Role" data-fsp-key="subtype" ' . (isset($on_change) ? 'data-fsp-on="change"' : '')) ?>

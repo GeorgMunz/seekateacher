@@ -1,0 +1,86 @@
+.nav-trans {
+  > li > a:hover {
+    background-color: transparent;
+  }
+}
+
+.nav-pad-0 {
+  > li > a {
+    padding: 0;
+  }
+}
+
+.nav-bordered {
+  > li > a:after {
+    content: ' ';
+    position: absolute;
+    border-right: 1px solid $pink;
+  }
+}
+
+.nav-pink {
+  > li > a {
+    color: $pink;
+  }
+}
+
+.nav-style-1 {
+  @extend .nav-pink;
+  @extend .nav-pad-0;
+  @extend .nav-bordered;
+  @extend .nav-trans;
+  @extend .flex-sb-h;
+  text-align: center;
+  > li > a {
+    @include font(lg-regular);
+    font-size: 20px;
+  }
+}
+
+.nav-white {
+  @extend .list-reset;
+  @extend .flex-sb-h;
+  padding: 5px 0 !important;
+  .dropdown:hover {
+    .dropdown-menu {
+      display: block;
+      margin-top: -5px;
+    }
+  }
+  > li > a {
+    width: 160px;
+    height: 35px;
+    background-color: $white;
+    color: $pink;
+    @extend .flex-center;
+  }
+}
+.nav-gray {
+  @extend .list-reset;
+  > li > a {
+    display: block;
+    padding: 15px;
+    color: $black;
+    &.active {
+      color: $pink;
+    }
+    &.btn {
+      padding: 4px 28px;
+      margin-bottom: 6px;
+      &:hover {
+        color: $pink !important;
+      }
+    }
+  }
+}
+
+// used in community
+.nav-hor-pink {
+  @extend .list-reset;
+  display: flex;
+  > li > a {
+    @extend .btn;
+    @extend .btn-outline-pink;
+    margin-right: 15px;
+  }
+}

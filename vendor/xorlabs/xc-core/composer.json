@@ -1,0 +1,25 @@
+{
+  "name": "xorlabs/xc-core",
+  "description": "xc core",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Shavi Pathania",
+      "email": "pathania.shavi@gmail.com"
+    }
+  ],
+  "require": {
+    "xorlabs/php-dp": "dev-master"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@bitbucket.org:xorlabs/php-dp.git"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "XORLabs\\XC\\Core\\": "src/"
+    }
+  }
+}

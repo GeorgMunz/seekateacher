@@ -1,0 +1,4 @@
+@each $prefix, $val in ('-0', 0),
+                       ('-5', 5) {
+  .r-a#{$prefix} { border-radius: round($val) !important; }
+}

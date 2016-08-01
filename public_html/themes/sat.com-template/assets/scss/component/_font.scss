@@ -1,0 +1,63 @@
+@font-face {
+	font-family: 'LeagueGothic-Regular';
+	src: url($fonts + '/roboto/LeagueGothic-Regular.otf');
+}
+.font-lg-regular {
+	font-family: 'LeagueGothic-Regular' !important;
+}
+
+@font-face {
+	font-family: 'Roboto-Medium';
+	src: url($fonts + '/roboto/Roboto-Medium.ttf');
+}
+.font-medium {
+	font-family: 'Roboto-Medium' !important;
+}
+
+@font-face {
+	font-family: 'Roboto-Regular';
+	src: url($fonts + '/roboto/Roboto-Regular.ttf');
+}
+.font-regular {
+	font-family: 'Roboto-Regular' !important;
+}
+
+@font-face {
+	font-family: 'Roboto-Bold';
+	src: url($fonts + '/roboto/Roboto-Bold.ttf');
+}
+.font-bold {
+	font-family: 'Roboto-Bold' !important;
+}
+
+
+@mixin font($font) {
+  @if $font == 'lg-regular' {
+    font-family: 'LeagueGothic-Regular';
+  }
+	@else if $font == 'regular' {
+		font-family: 'Roboto-Regular' !important;
+	}
+	@else if $font == 'bold' {
+		font-family: 'Roboto-Bold' !important;
+	}
+}
+
+.font-12 {
+	font-size: 12px !important;
+}
+.font-14 {
+	font-size: 14px !important;
+}
+.font-18 {
+	font-size: 18px !important;
+}
+.font-20 {
+	font-size: 20px !important;
+}
+.font-22 {
+	font-size: 22px !important;
+}
+.font-28 {
+	font-size: 28px !important;
+}

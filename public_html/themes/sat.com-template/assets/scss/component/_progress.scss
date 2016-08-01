@@ -1,0 +1,10 @@
+.progress-pink {
+  @extend .progress;
+  border: 2px solid $pink;
+  padding: 2px;
+  border-radius: 10px;
+  .progress-bar {
+    background-color: $pink;
+    border-radius: 10px;
+  }
+}

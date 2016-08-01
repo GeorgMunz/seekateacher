@@ -1,0 +1,1 @@
+<?= form_dropdown('t', model('option')->dropdown('job_organizations'), fsp('data', 'organization'), 'style="width:100%" data-plugin="select2" placeholder="Workplace" data-fsp-key="organization" ' . (isset($on_change)?'data-fsp-on="change"':'')) ?>

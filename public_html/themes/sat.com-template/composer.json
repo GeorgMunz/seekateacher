@@ -1,0 +1,23 @@
+{
+  "name": "xl/starter-template",
+  "description": "Starter Template",
+  "version": "0.0.2",
+  "authors": [
+    {
+      "name": "Shavi Pathania",
+      "email": "shavi@xorlabs.in"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.0",
+    "xl/template": "0.0.3"
+  },
+  "autoload": {
+    "files": [
+      "vendor/xl/template/src/template_helper.php",
+      "vendor/xl/template/src/form_helper.php",
+      "vendor/xl/template/src/debug_helper.php",
+      "vendor/xl/template/src/auth_helper.php"
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+.pink{
+  color: $pink !important;
+}
+
+.blue {
+  color: $blue !important;
+}
+
+.orange {
+  color: $orange !important;
+}
+
+.gray {
+  color: $gray !important;
+}
+.gray-light {
+  color: $gray-light !important;
+}
+.gray-dark {
+  color: $gray-dark !important;
+}
+
+.black {
+  color: $black !important;
+}
+.white {
+  color: $white !important;
+}
+
+.bg-gray-trans {
+  background-color: rgba(0,0,0,0.5);
+}
+.bg-gray-light {
+  background-color: $gray-light;
+}
+.bg-gray {
+  background-color: $gray;
+  transition: all 0.2s;
+}
+.bg-gray:hover {
+  background-color: $gray-light;
+}
+.bg-white {
+  background-color: $white;
+}
