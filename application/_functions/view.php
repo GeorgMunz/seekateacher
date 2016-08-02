@@ -91,13 +91,7 @@ function cj() {
 }
 
 function theme_url($theme = '') {
-  return (!$theme) ? '/seek/public_html/themes/'.view()->get_theme() : "/seek/public_html/themes/$theme/";
-  // return (!$theme) ? '/themes/'.view()->get_theme() : "/themes/$theme/";//Custom by Rosy
-}
-
-function base_url()
-{
-	return '/seek/public_html';
+  return (!$theme) ? '/themes/'.view()->get_theme() : "/themes/$theme/";
 }
 
 function url($key) {

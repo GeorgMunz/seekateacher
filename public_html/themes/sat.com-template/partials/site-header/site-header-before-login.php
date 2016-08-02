@@ -1,11 +1,11 @@
 <div class="site-header">
 	<div class="container">
 		<ul class="nav nav-pills nav-trans pull-right">
-			<li><a href="<?=base_url()?>/#hiw">HOW IT WORKS</a></li>
-			<li><a href="<?=base_url()?>/page/contact">CONTACT US</a></li>
-			<li><a href="<?=base_url()?><?=url('about-us')?>">ABOUT US</a></li>
-			<li><a class="p-r-0" href="<?=base_url()?><?=url('sign-up')?>">	<button class="btn btn-sm font-medium btn-outline-pink" type="submit">SIGN UP</button></a></li>
-			<li><a class="p-r-0" href="<?=base_url()?><?=url('sign-in')?>"><button class="btn btn-sm font-medium btn-outline-pink" type="submit">LOG IN</button></a></li>
+			<li><a href="/#hiw">HOW IT WORKS</a></li>
+			<li><a href="/page/contact">CONTACT US</a></li>
+			<li><a href="<?=url('about-us')?>">ABOUT US</a></li>
+			<li><a class="p-r-0" href="<?=url('sign-up')?>">	<button class="btn btn-sm font-medium btn-outline-pink" type="submit">SIGN UP</button></a></li>
+			<li><a class="p-r-0" href="<?=url('sign-in')?>"><button class="btn btn-sm font-medium btn-outline-pink" type="submit">LOG IN</button></a></li>
 		</ul>
 
 		<div class="flex">
